@@ -1,0 +1,70 @@
+.header {
+    display : flex;
+    flex-direction: row;
+    height : 60px;
+    background-color: var(--third-color);
+    align-items: center;
+    color : var(--primary-color);
+
+    .dropDown {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+    }
+
+    .sub_cats {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .visible {
+        padding-top: 94px;
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+
+    .home {
+        font-family: Fascinate, serif;
+        padding-left: 15px;
+        font-size: 25px;
+        user-select: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .cat {
+        user-select: none;
+        font-size: 18px;
+        padding : 0 40px 0 40px;
+        &:hover {
+            cursor : pointer;
+        }
+    }
+
+    .middle {
+        border-left : 2px solid var(--primary-color);
+        border-right : 2px solid var(--primary-color);
+        padding-top : 18px;
+        padding-bottom : 18px;
+    }
+
+    .sub-cat {
+        user-select: none;
+        cursor : pointer;
+        background-color: var(--third-color);
+        border-bottom : 1px solid var(--primary-color);
+        padding-top : 12px;
+        padding-bottom : 12px;
+        &:hover {
+            background-color: #5354a3;
+        }
+    }
+
+    .top {
+        border-top :  1px solid var(--primary-color);
+    }
+}
+

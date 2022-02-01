@@ -5,9 +5,31 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --zero-color : #fae5df;
+  --primary-color : #f5cac2;
+  --second-color : #ed7966;
+  --third-color : #303179;
+  --four-color : #141850;
+
+  zoom : 110%;
+
+}
+
+html, body, #app, #root {
+  height : 97.6%
+}
+
+html {
+  background-color:#fae5df;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: 'Fascinate';
+  src: local('Fascinate'), url(./font/Fascinate-Regular.ttf) format('truetype');
 }

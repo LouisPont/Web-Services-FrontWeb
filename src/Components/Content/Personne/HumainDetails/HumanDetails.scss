@@ -1,0 +1,113 @@
+.humain-detail {
+  height: 100%;
+  background-color: var(--zero-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .main-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cat-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom : 20px;
+  }
+
+  .cat-2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .img-film {
+    height : 300px;
+    width : 200px;
+  }
+
+  .infos {
+    display : flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .ligne {
+    display: flex;
+    flex-direction: row;
+    color : var(--second-color);
+    font-size : 30px;
+    font-weight : bold
+  }
+
+  .enbas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color : var(--second-color);
+    font-size : 30px;
+    font-weight : bold
+  }
+
+  .info {
+    padding : 5px;
+  }
+
+  .films {
+    display : flex;
+    flex-direction: row;
+  }
+
+  .tild {
+    position: absolute;
+    top : 40px;
+    left : 40px;
+  }
+
+  .moins {
+    position: absolute;
+    top : 40px;
+    right : 40px;
+  }
+
+  .perso {
+    position: absolute;
+    top : 40px;
+    left : 110px
+  }
+
+  .card-film{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor : pointer;
+    margin-right : 10px;
+
+    &:hover>.details {
+      display : block;
+    }
+
+    &:hover>.img-film {
+      opacity: 0.4;
+      filter: alpha(opacity=40);
+    }
+  }
+
+  .details {
+    display: none;
+    position: fixed;
+    top : 650px;
+    background-color : var(--second-color);
+    color : var(--zero-color);
+    width : max-content;
+    padding : 12px 42px;
+    border-radius : 0.3em;
+    font-family: Fascinate, serif;
+  }
+
+  .padding-top {
+    padding-top : 15px;
+  }
+
+}

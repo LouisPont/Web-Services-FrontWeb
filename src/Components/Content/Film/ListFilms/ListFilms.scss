@@ -1,0 +1,90 @@
+.list-films {
+  background-color: var(--zero-color);
+
+  .titre {
+    padding-top: 30px;
+    font-family: Fascinate, serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    color : var(--second-color);
+    user-select: none;
+    position: relative;
+    left : 30px;
+  }
+
+  .ligne {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .search-new {
+    width : 300px;
+    padding-left: 15px;
+    padding-top : 30px;
+  }
+
+  .between {
+    justify-content: space-between;
+  }
+
+  .center {
+    justify-content: center;
+  }
+
+  .around {
+    justify-content: space-evenly;
+  }
+
+  .list {
+    padding-top : 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+
+
+    .card-film{
+      position : relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor : pointer;
+
+      &:hover>.details {
+        display : block;
+      }
+
+      &:hover>.img-film {
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+      }
+    }
+
+    .film-titre {
+      max-width: 240px;
+      color : var(--second-color);
+      font-size : 20px;
+      font-family: Fascinate, serif;
+    }
+
+    .img-film {
+      height : 350px;
+      width : 240px;
+      padding-left:20px;
+      padding-right : 20px;
+    }
+
+    .details {
+      display: none;
+      position: absolute;
+      top : 290px;
+      background-color : var(--second-color);
+      color : var(--zero-color);
+      width : max-content;
+      padding : 12px 42px;
+      border-radius : 0.3em;
+      font-family: Fascinate, serif;
+    }
+  }
+
+}
